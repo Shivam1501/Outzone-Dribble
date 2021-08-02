@@ -1,0 +1,200 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#girl{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 300px;
+    opacity: 0.7;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 30px 60px;
+    position: absolute;
+    z-index: 9999;
+}
+#nav{
+    width: 100%;
+    display: flex;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* margin-right: 45px; */
+    margin-left: 53px;
+}
+#grayscale{
+    margin-right: 235px;
+    margin-left: 0% !important;
+}
+#nav i{
+    color: rgb(211, 211, 211);
+    margin-left: 550px;
+    cursor: pointer;
+}
+.heading{
+    /* text-transform: uppercase; */
+    font-family: "Playfair Display";
+    color: #fff;
+    position: absolute;
+    font-size: 210px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+#tophead{
+    top: 15%;
+    left: 24.5%;
+    animation: SlideUp 1s  0.5s  cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#btmhead{
+    top: 40%;
+    left: 40%;
+    animation: SlideUp 1s 1s  cubic-bezier(0.19, 1, 0.22, 1) both;
+
+}
+.paragraph{
+    position: absolute;
+    width: 250px;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.3;
+}
+#leftpara{
+    top: 53%;
+    left: 12%;
+    animation: show 2s 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#rightpara{
+    top: 75%;
+    right: 9%;
+    animation: show 2s 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+
+}
+#sun{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom, red, rgb(228, 15, 15), rgb(236, 157, 11), white, rgb(212, 212, 212));
+    filter: blur(15px);
+    border-radius: 50%;
+    top: 16%;
+    right: 26%;
+}
+#arrow{
+    position: absolute;
+    top: 71.9%;
+    left: 28%;
+    width: 105px;
+    height: 80px;
+    animation: SlideLeft 1.5s 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#btmnav{
+    position: absolute;
+    bottom: 30px;
+}
+#btmnav a{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-right: 25px;
+    opacity: 0.7;
+}
+
+#round{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: 12%;
+    opacity: 0.5;
+    animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+#lines{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+}
+.line{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    border-left: 2px solid rgb(122, 122, 122);
+    opacity: 0.3;
+}
+#lines #one{
+    left: 25%;
+}
+#lines #two{
+    left: 50%;
+}
+#lines #three{
+    left: 75%;
+}
+
+@keyframes SlideUp{
+    from{
+        opacity: 0;
+        transform:  translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform:  translateY(0px);
+    }
+}
+
+@keyframes SlideLeft{
+    from{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.4;
+    }
+}
